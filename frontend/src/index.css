@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  body {
+    @apply bg-white text-black;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-green hover:bg-green-light text-black font-bold py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green focus:ring-offset-2;
+  }
+  .btn-secondary {
+    @apply bg-white hover:bg-green-light text-black font-bold py-2 px-4 rounded-lg border border-green transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green focus:ring-offset-2;
+  }
+  .btn-success {
+    @apply bg-green hover:bg-green-light text-black font-bold py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green focus:ring-offset-2;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-green-light p-6 text-black;
+  }
+  .card-hover {
+    @apply bg-white rounded-xl shadow-md border border-green p-6 hover:bg-green-light transition-shadow duration-200 text-black;
+  }
+  .input-field {
+    @apply w-full px-3 py-2 bg-white text-black border border-green rounded-lg focus:outline-none focus:ring-2 focus:ring-green focus:border-green placeholder-black;
+  }
+  .eco-gradient {
+    @apply bg-gradient-to-br from-white to-green-light/80;
+  }
+  .sustainability-score {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-green text-black;
+  }
+  .score-excellent {
+    @apply bg-green text-black;
+  }
+  .score-good {
+    @apply bg-green-light text-black;
+  }
+  .score-fair {
+    @apply bg-white text-black border border-green;
+  }
+  .score-poor {
+    @apply bg-white text-black border border-green;
+  }
+  h1, h2, h3, h4, h5, h6, strong, .font-bold {
+    @apply text-black;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Loading spinner */
+.spinner {
+  @apply animate-spin rounded-full border-2 border-green border-t-white;
+} 
