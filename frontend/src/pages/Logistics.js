@@ -177,7 +177,7 @@ const Logistics = () => {
 
       {/* Stats */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div className="card">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <Truck className="h-8 w-8 text-eco-blue" />
             <div className="ml-4">
@@ -187,7 +187,7 @@ const Logistics = () => {
           </div>
         </div>
         
-        <div className="card">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <TrendingDown className="h-8 w-8 text-red-600" />
             <div className="ml-4">
@@ -197,7 +197,7 @@ const Logistics = () => {
           </div>
         </div>
         
-        <div className="card">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <TrendingDown className="h-8 w-8 text-green-600" />
             <div className="ml-4">
@@ -207,7 +207,7 @@ const Logistics = () => {
           </div>
         </div>
         
-        <div className="card">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <TrendingDown className="h-8 w-8 text-green-600" />
             <div className="ml-4">
@@ -219,7 +219,7 @@ const Logistics = () => {
       </div>
 
       {/* Search */}
-      <div className="card">
+      <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
         <div className="relative">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
           <input
@@ -234,7 +234,7 @@ const Logistics = () => {
 
       {/* Route Form */}
       {showForm && (
-        <div className="card">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">
             {editingRoute ? 'Edit Route' : 'Add New Route'}
           </h3>
@@ -432,7 +432,7 @@ const Logistics = () => {
       )}
 
       {/* Routes List */}
-      <div className="card">
+      <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">All Routes</h3>
         <div className="space-y-4">
           {filteredRoutes.map((route) => (

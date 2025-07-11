@@ -144,7 +144,7 @@ const Dashboard = () => {
 
       {/* Key Metrics */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div className="card bg-surface">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Users className="h-8 w-8 text-primary-600" />
@@ -166,7 +166,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="card bg-surface">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Truck className="h-8 w-8 text-eco-blue" />
@@ -190,7 +190,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="card bg-surface">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Store className="h-8 w-8 text-eco-purple" />
@@ -210,7 +210,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="card bg-surface">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Lightbulb className="h-8 w-8 text-eco-yellow" />
@@ -234,7 +234,7 @@ const Dashboard = () => {
       {/* Charts Section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Supplier Sustainability Scores */}
-        <div className="card bg-surface">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <h2 className="text-xl font-bold text-white mb-2">Supplier Sustainability Scores</h2>
           <p className="text-gray-400 mb-4 text-sm">Top 5 suppliers by overall sustainability score.</p>
           <div className="h-64">
@@ -251,7 +251,7 @@ const Dashboard = () => {
         </div>
 
         {/* Supplier Categories */}
-        <div className="card bg-surface">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <h2 className="text-xl font-bold text-white mb-2">Supplier Categories</h2>
           <p className="text-gray-400 mb-4 text-sm">Distribution of your suppliers by category.</p>
           <div className="h-64">
@@ -288,7 +288,7 @@ const Dashboard = () => {
 
       {/* Emissions Tracking */}
       {logistics.length > 0 && (
-        <div className="card bg-surface">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <h3 className="text-lg font-semibold text-white mb-4">Emissions Tracking</h3>
           <div className="h-64">
             <ResponsiveContainer width="100%" height="100%">
@@ -306,7 +306,7 @@ const Dashboard = () => {
       )}
 
       {/* Quick Actions */}
-      <div className="card bg-surface">
+      <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
         <h3 className="text-lg font-semibold text-white mb-4">Quick Actions</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <button 
@@ -345,7 +345,7 @@ const Dashboard = () => {
       </div>
 
       {/* Recent Activity */}
-      <div className="card bg-surface">
+      <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
         <h3 className="text-lg font-semibold text-white mb-4">Recent Activity</h3>
         <div className="space-y-4">
           {suppliers.slice(0, 3).map((supplier) => (

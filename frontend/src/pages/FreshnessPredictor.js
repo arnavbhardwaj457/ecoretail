@@ -86,7 +86,7 @@ export default function FreshnessPredictor() {
         {error && <div className="text-red-600 mt-2">{error}</div>}
       </form>
       {result && (
-        <div className="bg-white p-6 rounded-xl shadow-md border border-green">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <h2 className="text-xl font-bold mb-2 text-black">Prediction Result</h2>
           <div className="mb-4">
             <div className="flex items-center justify-between mb-1">

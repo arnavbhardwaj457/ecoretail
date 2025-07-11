@@ -35,7 +35,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen dark:bg-eco-bg bg-white">
       <Routes>
         {/* Public Routes */}
         <Route path="/login" element={<Login />} />

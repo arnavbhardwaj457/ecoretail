@@ -144,7 +144,7 @@ const AiSuggestions = () => {
 
       {/* Stats */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <div className="p-2 bg-blue-100 rounded-lg">
               <Lightbulb className="h-6 w-6 text-blue-600" />
@@ -155,7 +155,7 @@ const AiSuggestions = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <div className="p-2 bg-green-100 rounded-lg">
               <CheckCircle className="h-6 w-6 text-green-600" />
@@ -168,7 +168,7 @@ const AiSuggestions = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <div className="p-2 bg-yellow-100 rounded-lg">
               <Star className="h-6 w-6 text-yellow-600" />
@@ -181,7 +181,7 @@ const AiSuggestions = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <div className="p-2 bg-purple-100 rounded-lg">
               <MessageCircle className="h-6 w-6 text-purple-600" />
@@ -197,7 +197,7 @@ const AiSuggestions = () => {
       </div>
 
       {/* Filters */}
-      <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+      <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
         <div className="flex flex-col sm:flex-row gap-4">
           <select
             value={selectedCategory}
@@ -250,7 +250,7 @@ const AiSuggestions = () => {
         {filteredSuggestions.map((suggestion) => (
           <div 
             key={suggestion._id} 
-            className={`rounded-lg shadow-sm border overflow-hidden transition-shadow hover:shadow-md ${getStatusColor(suggestion.status)}`}
+            className={`glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in ${getStatusColor(suggestion.status)}`}
           >
             <div className="p-6">
               <div className="flex items-start justify-between mb-4">

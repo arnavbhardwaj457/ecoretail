@@ -184,7 +184,7 @@ const Suppliers = () => {
 
       {/* Stats */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div className="card">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <Users className="h-8 w-8 text-primary-600" />
             <div className="ml-4">
@@ -194,7 +194,7 @@ const Suppliers = () => {
           </div>
         </div>
         
-        <div className="card">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <Award className="h-8 w-8 text-green-600" />
             <div className="ml-4">
@@ -204,7 +204,7 @@ const Suppliers = () => {
           </div>
         </div>
         
-        <div className="card">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <TrendingUp className="h-8 w-8 text-blue-600" />
             <div className="ml-4">
@@ -216,7 +216,7 @@ const Suppliers = () => {
           </div>
         </div>
         
-        <div className="card">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <Filter className="h-8 w-8 text-yellow-600" />
             <div className="ml-4">
@@ -230,7 +230,7 @@ const Suppliers = () => {
       </div>
 
       {/* Filters */}
-      <div className="card">
+      <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
         <div className="flex flex-col md:flex-row gap-4">
           <div className="flex-1">
             <div className="relative">
@@ -263,7 +263,7 @@ const Suppliers = () => {
 
       {/* Supplier Form */}
       {showForm && (
-        <div className="card">
+        <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">
             {editingSupplier ? 'Edit Supplier' : 'Add New Supplier'}
           </h3>
@@ -374,7 +374,7 @@ const Suppliers = () => {
       )}
 
       {/* Suppliers List */}
-      <div className="card">
+      <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">All Suppliers</h3>
         <div className="overflow-x-auto">
           <table className="min-w-full divide-y divide-gray-200">

@@ -147,7 +147,7 @@ const Profile = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Profile Information */}
         <div className="lg:col-span-2">
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200">
+          <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
             <div className="p-6">
               <h2 className="text-xl font-semibold text-gray-900 mb-6">Personal Information</h2>
               
@@ -298,7 +298,7 @@ const Profile = () => {
         {/* Sidebar */}
         <div className="space-y-6">
           {/* Account Security */}
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200">
+          <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
             <div className="p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Account Security</h3>
               
@@ -397,7 +397,7 @@ const Profile = () => {
           </div>
 
           {/* Account Info */}
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200">
+          <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
             <div className="p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Account Information</h3>
               
@@ -432,7 +432,7 @@ const Profile = () => {
           </div>
 
           {/* Quick Actions */}
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200">
+          <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
             <div className="p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h3>
               
