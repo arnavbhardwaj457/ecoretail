@@ -209,8 +209,8 @@ const Marketplace = () => {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900">Circular Economy Marketplace</h1>
-          <p className="mt-2 text-gray-600">
+          <h1 className="text-3xl font-bold text-white">Circular Economy Marketplace</h1>
+          <p className="mt-2 text-gray-100">
             Connect with other businesses to reuse materials and reduce waste
           </p>
         </div>
@@ -232,7 +232,7 @@ const Marketplace = () => {
             </div>
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-600">Total Items</p>
-              <p className="text-2xl font-bold text-gray-900">{marketplaceItems.length}</p>
+              <p className="text-2xl font-bold text-white">{marketplaceItems.length}</p>
             </div>
           </div>
         </div>
@@ -243,7 +243,7 @@ const Marketplace = () => {
             </div>
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-600">Active Listings</p>
-              <p className="text-2xl font-bold text-gray-900">
+              <p className="text-2xl font-bold text-white">
                 {marketplaceItems.filter(item => item.status === 'active').length}
               </p>
             </div>
@@ -256,7 +256,7 @@ const Marketplace = () => {
             </div>
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-600">Categories</p>
-              <p className="text-2xl font-bold text-gray-900">
+              <p className="text-2xl font-bold text-white">
                 {new Set(marketplaceItems.map(item => item.category)).size}
               </p>
             </div>
@@ -269,7 +269,7 @@ const Marketplace = () => {
             </div>
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-600">Waste Diverted</p>
-              <p className="text-2xl font-bold text-gray-900">
+              <p className="text-2xl font-bold text-white">
                 {marketplaceItems.reduce((total, item) => total + (parseFloat(item.quantity) || 0), 0).toFixed(1)} tons
               </p>
             </div>
@@ -321,8 +321,8 @@ const Marketplace = () => {
             <div className="p-6">
               <div className="flex items-start justify-between">
                 <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-3">{item.description}</p>
+                  <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
+                  <p className="text-gray-100 text-sm mb-4 line-clamp-3">{item.description}</p>
                   
                   <div className="space-y-2 mb-4">
                     <div className="flex items-center text-sm">
@@ -391,7 +391,7 @@ const Marketplace = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
             <div className="p-6">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              <h2 className="text-2xl font-bold text-white mb-6">
                 {editingItem ? 'Edit Material' : 'List New Material'}
               </h2>
               

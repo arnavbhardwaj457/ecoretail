@@ -170,8 +170,8 @@ const Suppliers = () => {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Suppliers</h1>
-          <p className="text-gray-600">Manage your supplier sustainability tracking</p>
+          <h1 className="text-2xl font-bold text-white">Suppliers</h1>
+          <p className="text-gray-100">Manage your supplier sustainability tracking</p>
         </div>
         <button
           onClick={() => setShowForm(true)}
@@ -189,7 +189,7 @@ const Suppliers = () => {
             <Users className="h-8 w-8 text-primary-600" />
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-500">Total Suppliers</p>
-              <p className="text-2xl font-bold text-gray-900">{suppliers.length}</p>
+              <p className="text-2xl font-bold text-white">{suppliers.length}</p>
             </div>
           </div>
         </div>
@@ -199,7 +199,7 @@ const Suppliers = () => {
             <Award className="h-8 w-8 text-green-600" />
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-500">Average Score</p>
-              <p className="text-2xl font-bold text-gray-900">{averageScore}/100</p>
+              <p className="text-2xl font-bold text-white">{averageScore}/100</p>
             </div>
           </div>
         </div>
@@ -209,7 +209,7 @@ const Suppliers = () => {
             <TrendingUp className="h-8 w-8 text-blue-600" />
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-500">Excellent (80+)</p>
-              <p className="text-2xl font-bold text-gray-900">
+              <p className="text-2xl font-bold text-white">
                 {suppliers.filter(s => s.sustainabilityScore.overall >= 80).length}
               </p>
             </div>
@@ -221,7 +221,7 @@ const Suppliers = () => {
             <Filter className="h-8 w-8 text-yellow-600" />
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-500">Categories</p>
-              <p className="text-2xl font-bold text-gray-900">
+              <p className="text-2xl font-bold text-white">
                 {new Set(suppliers.map(s => s.category)).size}
               </p>
             </div>
@@ -264,7 +264,7 @@ const Suppliers = () => {
       {/* Supplier Form */}
       {showForm && (
         <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">
+          <h3 className="text-lg font-semibold text-white mb-4">
             {editingSupplier ? 'Edit Supplier' : 'Add New Supplier'}
           </h3>
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -375,7 +375,7 @@ const Suppliers = () => {
 
       {/* Suppliers List */}
       <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">All Suppliers</h3>
+        <h3 className="text-lg font-semibold text-white mb-4">All Suppliers</h3>
         <div className="overflow-x-auto">
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-gray-50">

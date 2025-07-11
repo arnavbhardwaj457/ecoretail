@@ -131,7 +131,7 @@ const Dashboard = () => {
             <h1 className="text-2xl font-bold text-black">
               Welcome back, {user?.profile?.firstName || user?.username}!
             </h1>
-            <p className="text-gray-400 mt-1">
+            <p className="text-gray-800 mt-1">
               Here's your sustainability overview for {user?.company?.name}
             </p>
           </div>
@@ -147,10 +147,10 @@ const Dashboard = () => {
         <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Users className="h-8 w-8 text-primary-600" />
+              <Users className="h-8 w-8 text-white" />
             </div>
             <div className="ml-4">
-              <p className="text-sm font-medium text-gray-400">Total Suppliers</p>
+              <p className="text-sm font-medium text-gray-100">Total Suppliers</p>
               <p className="text-2xl font-bold text-white">{totalSuppliers}</p>
             </div>
           </div>
@@ -169,10 +169,10 @@ const Dashboard = () => {
         <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Truck className="h-8 w-8 text-eco-blue" />
+              <Truck className="h-8 w-8 text-white" />
             </div>
             <div className="ml-4">
-              <p className="text-sm font-medium text-gray-400">Logistics Routes</p>
+              <p className="text-sm font-medium text-gray-100">Logistics Routes</p>
               <p className="text-2xl font-bold text-white">{totalLogisticsRoutes}</p>
             </div>
           </div>
@@ -193,10 +193,10 @@ const Dashboard = () => {
         <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Store className="h-8 w-8 text-eco-purple" />
+              <Store className="h-8 w-8 text-white" />
             </div>
             <div className="ml-4">
-              <p className="text-sm font-medium text-gray-400">Marketplace Listings</p>
+              <p className="text-sm font-medium text-gray-100">Marketplace Listings</p>
               <p className="text-2xl font-bold text-white">{totalMarketplaceListings}</p>
             </div>
           </div>
@@ -213,10 +213,10 @@ const Dashboard = () => {
         <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Lightbulb className="h-8 w-8 text-eco-yellow" />
+              <Lightbulb className="h-8 w-8 text-white" />
             </div>
             <div className="ml-4">
-              <p className="text-sm font-medium text-gray-400">AI Suggestions</p>
+              <p className="text-sm font-medium text-gray-100">AI Suggestions</p>
               <p className="text-2xl font-bold text-white">{totalAiSuggestions}</p>
             </div>
           </div>
@@ -235,8 +235,8 @@ const Dashboard = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Supplier Sustainability Scores */}
         <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
-          <h2 className="text-xl font-bold text-white mb-2">Supplier Sustainability Scores</h2>
-          <p className="text-gray-400 mb-4 text-sm">Top 5 suppliers by overall sustainability score.</p>
+          <h2 className="text-xl font-bold text-white mb-2 p-2">Supplier Sustainability Scores</h2>
+          <p className="text-gray-400 mb-4 text-sm p-2">Top 5 suppliers by overall sustainability score.</p>
           <div className="h-64">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={supplierScoreData.slice(0, 5)}>
@@ -252,7 +252,7 @@ const Dashboard = () => {
 
         {/* Supplier Categories */}
         <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
-          <h2 className="text-xl font-bold text-white mb-2">Supplier Categories</h2>
+          <h2 className="text-xl font-bold text-white mb-2 p-2">Supplier Categories</h2>
           <p className="text-gray-400 mb-4 text-sm">Distribution of your suppliers by category.</p>
           <div className="h-64">
             <ResponsiveContainer width="100%" height="100%">

@@ -50,7 +50,7 @@ export default function FreshnessPredictor() {
 
   return (
     <div className="max-w-2xl mx-auto py-8">
-      <h1 className="text-2xl font-bold mb-4 text-black">AI Freshness Predictor</h1>
+      <h1 className="text-2xl font-bold mb-4 text-white">AI Freshness Predictor</h1>
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-xl shadow-md border border-green mb-6 space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
@@ -87,21 +87,21 @@ export default function FreshnessPredictor() {
       </form>
       {result && (
         <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
-          <h2 className="text-xl font-bold mb-2 text-black">Prediction Result</h2>
+          <h2 className="text-xl font-bold mb-2 text-white">Prediction Result</h2>
           <div className="mb-4">
             <div className="flex items-center justify-between mb-1">
-              <span className="font-semibold text-black">Freshness Score</span>
-              <span className="font-bold text-black">{result.predictedScore}/100</span>
+              <span className="font-semibold text-white">Freshness Score</span>
+              <span className="font-bold text-white">{result.predictedScore}/100</span>
             </div>
             <div className="w-full bg-green-light rounded-full h-4">
               <div className="bg-green h-4 rounded-full" style={{ width: `${result.predictedScore}%` }}></div>
             </div>
           </div>
           <div className="mb-2">
-            <span className="font-semibold text-black">Estimated Shelf Life Left:</span> <span className="font-bold text-black">{result.predictedShelfLife} days</span>
+            <span className="font-semibold text-gray-100">Estimated Shelf Life Left:</span> <span className="font-bold text-white">{result.predictedShelfLife} days</span>
           </div>
           <div className="mb-2">
-            <span className="font-semibold text-black">Suggested Action:</span> <span className="font-bold text-black">{result.suggestedAction}</span>
+            <span className="font-semibold text-gray-100">Suggested Action:</span> <span className="font-bold text-white">{result.suggestedAction}</span>
           </div>
         </div>
       )}

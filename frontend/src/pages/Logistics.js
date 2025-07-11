@@ -163,8 +163,8 @@ const Logistics = () => {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Logistics</h1>
-          <p className="text-gray-600">Track transport routes and emissions</p>
+          <h1 className="text-2xl font-bold text-white">Logistics</h1>
+          <p className="text-gray-100">Track transport routes and emissions</p>
         </div>
         <button
           onClick={() => setShowForm(true)}
@@ -182,7 +182,7 @@ const Logistics = () => {
             <Truck className="h-8 w-8 text-eco-blue" />
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-500">Total Routes</p>
-              <p className="text-2xl font-bold text-gray-900">{logistics.length}</p>
+              <p className="text-2xl font-bold text-white">{logistics.length}</p>
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@ const Logistics = () => {
             <TrendingDown className="h-8 w-8 text-red-600" />
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-500">Total Emissions</p>
-              <p className="text-2xl font-bold text-gray-900">{totalEmissions.toFixed(1)} kg CO₂</p>
+              <p className="text-2xl font-bold text-white">{totalEmissions.toFixed(1)} kg CO₂</p>
             </div>
           </div>
         </div>
@@ -202,7 +202,7 @@ const Logistics = () => {
             <TrendingDown className="h-8 w-8 text-green-600" />
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-500">Emissions Saved</p>
-              <p className="text-2xl font-bold text-gray-900">{totalEmissionsSaved.toFixed(1)} kg CO₂</p>
+              <p className="text-2xl font-bold text-white">{totalEmissionsSaved.toFixed(1)} kg CO₂</p>
             </div>
           </div>
         </div>
@@ -212,7 +212,7 @@ const Logistics = () => {
             <TrendingDown className="h-8 w-8 text-green-600" />
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-500">Cost Savings</p>
-              <p className="text-2xl font-bold text-gray-900">${totalCostSaved.toFixed(0)}</p>
+              <p className="text-2xl font-bold text-white">${totalCostSaved.toFixed(0)}</p>
             </div>
           </div>
         </div>
@@ -235,7 +235,7 @@ const Logistics = () => {
       {/* Route Form */}
       {showForm && (
         <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">
+          <h3 className="text-lg font-semibold text-white mb-4">
             {editingRoute ? 'Edit Route' : 'Add New Route'}
           </h3>
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -433,7 +433,7 @@ const Logistics = () => {
 
       {/* Routes List */}
       <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">All Routes</h3>
+        <h3 className="text-lg font-semibold text-white mb-4">All Routes</h3>
         <div className="space-y-4">
           {filteredRoutes.map((route) => (
             <div key={route._id} className="border border-gray-200 rounded-lg p-4 hover:bg-gray-50">
@@ -441,18 +441,18 @@ const Logistics = () => {
                 <div className="flex items-center space-x-4">
                   <Truck className="h-8 w-8 text-eco-blue" />
                   <div>
-                    <h4 className="font-medium text-gray-900">{route.route.name}</h4>
-                    <div className="flex items-center space-x-2 text-sm text-gray-500">
+                    <h4 className="font-medium text-white">{route.route.name}</h4>
+                    <div className="flex items-center space-x-2 text-sm text-gray-100">
                       <MapPin className="h-4 w-4" />
                       <span>{route.route.origin.location}</span>
                       <ArrowRight className="h-4 w-4" />
                       <span>{route.route.destination.location}</span>
                     </div>
                     <div className="flex items-center space-x-4 mt-2">
-                      <span className="text-sm text-gray-600">
+                      <span className="text-sm text-gray-100">
                         {route.transport.mode.replace('_', ' ')} • {route.route.distance.value} km
                       </span>
-                      <span className="text-sm text-gray-600">
+                      <span className="text-sm text-gray-100">
                         {route.schedule.frequency.replace('_', ' ')}
                       </span>
                     </div>
@@ -460,7 +460,7 @@ const Logistics = () => {
                 </div>
                 
                 <div className="text-right">
-                  <div className="text-lg font-semibold text-gray-900">
+                  <div className="text-lg font-semibold text-white">
                     {route.emissions.current.value} kg CO₂
                   </div>
                   {route.emissions.saved.value > 0 && (

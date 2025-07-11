@@ -110,8 +110,8 @@ const Profile = () => {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900">Profile Settings</h1>
-          <p className="mt-2 text-gray-600">
+          <h1 className="text-3xl font-bold text-white">Profile Settings</h1>
+          <p className="mt-2 text-gray-100">
             Manage your account information and preferences
           </p>
         </div>
@@ -149,12 +149,12 @@ const Profile = () => {
         <div className="lg:col-span-2">
           <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
             <div className="p-6">
-              <h2 className="text-xl font-semibold text-gray-900 mb-6">Personal Information</h2>
+              <h2 className="text-xl font-semibold text-white mb-6">Personal Information</h2>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-gray-100 mb-2">
                       <User className="h-4 w-4 inline mr-1" />
                       First Name
                     </label>
@@ -164,12 +164,12 @@ const Profile = () => {
                       disabled={!isEditing}
                       value={formData.firstName}
                       onChange={(e) => setFormData({...formData, firstName: e.target.value})}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-50 disabled:text-gray-500"
+                      className="w-full px-3 py-2 border border-gray-700 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-300 disabled:text-gray-500"
                     />
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-gray-100 mb-2">
                       <User className="h-4 w-4 inline mr-1" />
                       Last Name
                     </label>
@@ -179,13 +179,13 @@ const Profile = () => {
                       disabled={!isEditing}
                       value={formData.lastName}
                       onChange={(e) => setFormData({...formData, lastName: e.target.value})}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-50 disabled:text-gray-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-300 disabled:text-gray-100"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-100 mb-2">
                     <Mail className="h-4 w-4 inline mr-1" />
                     Email Address
                   </label>
@@ -195,13 +195,13 @@ const Profile = () => {
                     disabled={!isEditing}
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-50 disabled:text-gray-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-300 disabled:text-gray-500"
                   />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-gray-100 mb-2">
                       <Building className="h-4 w-4 inline mr-1" />
                       Company
                     </label>
@@ -210,12 +210,12 @@ const Profile = () => {
                       disabled={!isEditing}
                       value={formData.company}
                       onChange={(e) => setFormData({...formData, company: e.target.value})}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-50 disabled:text-gray-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-300 disabled:text-gray-500"
                     />
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-gray-100 mb-2">
                       <Phone className="h-4 w-4 inline mr-1" />
                       Phone Number
                     </label>
@@ -224,13 +224,13 @@ const Profile = () => {
                       disabled={!isEditing}
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-50 disabled:text-gray-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-300 disabled:text-gray-500"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-100 mb-2">
                     <MapPin className="h-4 w-4 inline mr-1" />
                     Address
                   </label>
@@ -239,13 +239,13 @@ const Profile = () => {
                     disabled={!isEditing}
                     value={formData.address}
                     onChange={(e) => setFormData({...formData, address: e.target.value})}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-50 disabled:text-gray-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-300 disabled:text-gray-500"
                   />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-gray-100 mb-2">
                       <Settings className="h-4 w-4 inline mr-1" />
                       Role
                     </label>
@@ -254,12 +254,12 @@ const Profile = () => {
                       disabled={!isEditing}
                       value={formData.role}
                       onChange={(e) => setFormData({...formData, role: e.target.value})}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-50 disabled:text-gray-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-300 disabled:text-gray-500"
                     />
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-gray-100 mb-2">
                       <Building className="h-4 w-4 inline mr-1" />
                       Department
                     </label>
@@ -268,7 +268,7 @@ const Profile = () => {
                       disabled={!isEditing}
                       value={formData.department}
                       onChange={(e) => setFormData({...formData, department: e.target.value})}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-50 disabled:text-gray-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-300 disabled:text-gray-500"
                     />
                   </div>
                 </div>
@@ -278,7 +278,7 @@ const Profile = () => {
                     <button
                       type="button"
                       onClick={handleCancel}
-                      className="px-4 py-2 text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
+                      className="px-4 py-2 text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-300 transition-colors"
                     >
                       Cancel
                     </button>
@@ -300,15 +300,15 @@ const Profile = () => {
           {/* Account Security */}
           <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
             <div className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Account Security</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">Account Security</h3>
               
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <Shield className="h-5 w-5 text-green-600 mr-3" />
                     <div>
-                      <p className="text-sm font-medium text-gray-900">Two-Factor Authentication</p>
-                      <p className="text-xs text-gray-500">Add an extra layer of security</p>
+                      <p className="text-sm font-medium text-white">Two-Factor Authentication</p>
+                      <p className="text-xs text-gray-100">Add an extra layer of security</p>
                     </div>
                   </div>
                   <button className="text-sm text-green-600 hover:text-green-700 font-medium">
@@ -320,8 +320,8 @@ const Profile = () => {
                   <div className="flex items-center">
                     <Key className="h-5 w-5 text-blue-600 mr-3" />
                     <div>
-                      <p className="text-sm font-medium text-gray-900">Change Password</p>
-                      <p className="text-xs text-gray-500">Update your password</p>
+                      <p className="text-sm font-medium text-white">Change Password</p>
+                      <p className="text-xs text-gray-100">Update your password</p>
                     </div>
                   </div>
                   <button 
@@ -399,30 +399,30 @@ const Profile = () => {
           {/* Account Info */}
           <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
             <div className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Account Information</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">Account Information</h3>
               
               <div className="space-y-3">
                 <div className="flex justify-between">
-                  <span className="text-sm text-gray-600">Account Type:</span>
-                  <span className="text-sm font-medium text-gray-900">Retailer</span>
+                  <span className="text-sm text-gray-100">Account Type:</span>
+                  <span className="text-sm font-medium text-white">Retailer</span>
                 </div>
                 
                 <div className="flex justify-between">
-                  <span className="text-sm text-gray-600">Member Since:</span>
-                  <span className="text-sm font-medium text-gray-900">
+                  <span className="text-sm text-gray-100">Member Since:</span>
+                  <span className="text-sm font-medium text-white">
                     {user?.createdAt ? new Date(user.createdAt).toLocaleDateString() : 'N/A'}
                   </span>
                 </div>
                 
                 <div className="flex justify-between">
-                  <span className="text-sm text-gray-600">Last Login:</span>
-                  <span className="text-sm font-medium text-gray-900">
+                  <span className="text-sm text-gray-100">Last Login:</span>
+                  <span className="text-sm font-medium text-white">
                     {user?.lastLogin ? new Date(user.lastLogin).toLocaleDateString() : 'N/A'}
                   </span>
                 </div>
                 
                 <div className="flex justify-between">
-                  <span className="text-sm text-gray-600">Status:</span>
+                  <span className="text-sm text-gray-100">Status:</span>
                   <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
                     Active
                   </span>
@@ -434,22 +434,22 @@ const Profile = () => {
           {/* Quick Actions */}
           <div className="glass bg-gradient-to-br from-eco-green/30 via-eco-green/10 to-eco-teal/20 border border-eco-green/30 shadow-glass rounded-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:ring-2 hover:ring-eco-green/40 animate-fade-in">
             <div className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">Quick Actions</h3>
               
               <div className="space-y-3">
                 <button className="w-full text-left p-3 rounded-lg hover:bg-gray-50 transition-colors">
-                  <p className="text-sm font-medium text-gray-900">Download Data</p>
-                  <p className="text-xs text-gray-500">Export your sustainability data</p>
+                  <p className="text-sm font-medium text-white">Download Data</p>
+                  <p className="text-xs text-gray-100">Export your sustainability data</p>
                 </button>
                 
                 <button className="w-full text-left p-3 rounded-lg hover:bg-gray-50 transition-colors">
-                  <p className="text-sm font-medium text-gray-900">Privacy Settings</p>
-                  <p className="text-xs text-gray-500">Manage your privacy preferences</p>
+                  <p className="text-sm font-medium text-white">Privacy Settings</p>
+                  <p className="text-xs text-gray-100">Manage your privacy preferences</p>
                 </button>
                 
                 <button className="w-full text-left p-3 rounded-lg hover:bg-gray-50 transition-colors">
-                  <p className="text-sm font-medium text-gray-900">Notification Settings</p>
-                  <p className="text-xs text-gray-500">Configure email notifications</p>
+                  <p className="text-sm font-medium text-white">Notification Settings</p>
+                  <p className="text-xs text-gray-100">Configure email notifications</p>
                 </button>
               </div>
             </div>
