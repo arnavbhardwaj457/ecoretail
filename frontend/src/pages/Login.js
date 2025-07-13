@@ -163,7 +163,7 @@ const Login = () => {
 
         <div className="text-center">
           <p className="text-xs text-gray-500">
-            Built for the Walmart Sparkathon - Building a sustainable future
+            Building a sustainable future
           </p>
         </div>
       </div>
